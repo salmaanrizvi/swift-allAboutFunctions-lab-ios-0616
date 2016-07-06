@@ -15,7 +15,9 @@
  */
 // write your code here
 
-
+func frozen() {
+    print("Let it go!")
+}
 
 
 
@@ -24,7 +26,10 @@
  */
 // write your code here
 
-
+func frozenAgain () {
+    let frozen = "Let it go! Again!"
+    print(frozen)
+}
 
 
 /*: question3
@@ -32,7 +37,9 @@
  */
 // write your code here
 
-
+func favoriteCharacter(characterName : String) {
+    print("My favorite character is \(characterName)")
+}
 
 
 /*: question4
@@ -40,24 +47,31 @@
  */
 // write your code here
 
-
-
+let jon = "Snow"
+favoriteCharacter(jon)
+var jon2 = "Stark"
+favoriteCharacter(jon2)
 
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
 // write your code here
+func problems(numberOfProblems: Int) {
+    print("I got \(numberOfProblems) problems but Swift ain't one.")
+}
 
-
-
+problems(2)
 
 /*: question6
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
 // write your code here
 
+func favoriteBand(bandName : String, bandPosition : Int) -> Void {
+    print("My #\(bandPosition) favorite band is \(bandName).")
+}
 
-
+favoriteBand("RHCP", bandPosition: 1)
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again?
@@ -66,7 +80,7 @@ func badFavoriteBand(bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName).")
 }
 
-badFavoriteBand("The Beatles", 2)
+badFavoriteBand("The Beatles", position: 2)
 
 
 
@@ -74,13 +88,11 @@ badFavoriteBand("The Beatles", 2)
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it?
  */
-func alsoBadFavoriteBand(bandName: String, position: String) {
+func alsoBadFavoriteBand(bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName)")
 }
 
 alsoBadFavoriteBand("Blink-182", position: 42)
-
-
 
 
 /*: question9
@@ -96,7 +108,9 @@ alsoBadFavoriteBand("Blink-182", position: 42)
  */
 // write your code here
 
-
+func buzz() -> String {
+    return "Buzz Lightyear to the rescue"
+}
 
 
 /*: question11
@@ -104,7 +118,9 @@ alsoBadFavoriteBand("Blink-182", position: 42)
  */
 // write your code here
 
-
+func wtf() -> Int {
+    return 8
+}
 
 
 /*: question12
@@ -112,8 +128,11 @@ alsoBadFavoriteBand("Blink-182", position: 42)
  */
 // write your code here
 
+func inifinity(characterName:String) -> String {
+    return "To infinity and beyond, \(characterName.uppercaseString)!"
+}
 
-
+inifinity("Dumbledore")
 
 /*:
  [Solution](solution)
